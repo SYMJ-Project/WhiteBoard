@@ -29,13 +29,12 @@
 
     <div class="page-container">
         <div class="content">
-            ... MAIN CONTENT GOES HERE ...
+            <!-- ici le contenu de la page -->
         </div>
         <div class="sidebar-menu">
             <header class="logo">
                 <a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="#">
                     <span id="logo" class="fa fa-html5 fa-5x"></span>
-                    <!--<img id="logo" src="" alt="Logo"/>-->
                 </a>
             </header>
             <div style="border-top:1px solid rgba(69, 74, 84, 0.7)"></div>
@@ -82,12 +81,13 @@
         $("#showmenu2").click(function (e) {
             e.preventDefault();
             $("#menu2").toggleClass("show");
-            if ($("#icone").hasClass("glyphicon-chevron-right")) {
-                $("#icone").removeClass("glyphicon-chevron-right");
-                $("#icone").addClass("glyphicon-chevron-left");
+            var $icone = $("#icone");
+            if ($icone.hasClass("glyphicon-chevron-right")) {
+                $icone.removeClass("glyphicon-chevron-right");
+                $icone.addClass("glyphicon-chevron-left");
             } else {
-                $("#icone").removeClass("glyphicon-chevron-left");
-                $("#icone").addClass("glyphicon-chevron-right");
+                $icone.removeClass("glyphicon-chevron-left");
+                $icone.addClass("glyphicon-chevron-right");
             }
         });
 
@@ -96,12 +96,12 @@
         $(".sidebar-icon").click(function () {
             if (toggle) {
                 $(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
-                $("#menu span").css({ "position": "absolute" });
+                $("#menu").find("span").css({ "position": "absolute" });
             }
             else {
                 $(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
                 setTimeout(function () {
-                    $("#menu span").css({ "position": "relative" });
+                    $("#menu").find("span").css({ "position": "relative" });
                 }, 400);
             }
 
