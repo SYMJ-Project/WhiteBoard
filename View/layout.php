@@ -16,7 +16,7 @@
         <title>WhiteBoard - H4E</title>
         <link href="/Content/css/bootstrap.css" rel="stylesheet" />
         <link href="/Content/css/Menu.css" rel="stylesheet" />
-        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <link href="/Content/css/font-awesome.min.css" rel="stylesheet">
         <script type="text/javascript" src="/Script/js/bootstrap.js"></script>
         <script type="text/javascript" src="/Script/js/respond.js"></script>
         <script type="text/javascript" src="/Script/js/jquery.min.js"></script>
